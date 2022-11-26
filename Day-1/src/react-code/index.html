@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Namaste Rect BootCamp</title>
+  </head>
+  <body>   
+<!-- using React -->
+<div id="root">   Welcome to Namaste React BootCamp </div>
+  <!-- CORE react code (shared files)-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <!-- REACT DOM : helper fuctions-->
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <script>
+const h1 = React.createElement(
+      "h1", 
+      { class:"headingclass" },
+      "This code is created by React"
+    );
+
+    const div = React.createElement(
+      "div", 
+      { className: "democlass", },
+      "Welcome to Namaste Rect BootCamp",
+      h1
+    );
+  
+console.log(div);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(div);
+console.log(root);
+
+
+  </script>
+  </body>
+</html>

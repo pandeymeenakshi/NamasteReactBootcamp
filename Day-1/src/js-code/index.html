@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Namaste Rect BootCamp</title>
+  </head>
+  <body>   
+
+<!-- Adding the tag using Javascript -->
+<div id="container">Welcome to Namaste Rect BootCamp </div>
+
+<script>
+  const container = document.getElementById("container");
+  container.setAttribute("class", "democlass");
+
+  const heading = document.createElement("h1");
+  heading.innerHTML = " This code is created by Javascript";
+  heading.setAttribute("class", "democlass");
+  container.appendChild(heading);
+
+  console.log(container);
+
+// returns an array-like object of all child elements which have all of the given class name(s).
+  const heading1 = document.getElementsByClassName("democlass");
+  heading1.innerHTML = " Again hello world!";
+  // will give error because append we can do only in node type elements
+  // heading.appendChild(heading1);
+  console.log(container);
+  console.log(heading1);
+
+  heading.setAttribute("class", "headingclass");
+
+  // Uncaught TypeError: Cannot read properties of null (reading 'getElementsByClassName')
+  // coz it will search & return only elements which are descendants of the specified root element with the given class name
+  //const element = document.getElementById('root').getElementsByClassName('democlass');
+  //console.log(element);
+</script>
+
+  </body>
+</html>
