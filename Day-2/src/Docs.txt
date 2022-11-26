@@ -1,0 +1,62 @@
+npm : package manager for js files. 
+earlier we used to put everything inside our html, now npm is kind of maintainer, keeps track of everything libraries, dependencies etc. and
+earlier we used to inject things using <script>
+// NODE should be installed in the system directory
+
+npm init -y
+=> create package.json 
+
+npm i // to insatll normal devDependencies
+npm i -d // dev dependencies
+npm i react react-dom
+- it will fetch react file & react dom files and inject it
+
+=> create package-lock.json
+=> node_modules i react-dom
+=> in package.json added  "dependencies": {
+                                            "react": "^18.2.0",
+                                            "react-dom": "^18.2.0"
+                                          }
+
+node-modules : will have actual code of all the dependencies and transitive dependencies (i.e : dependencies of dependencies)
+
+
+bundlers : parcel & webpack & babel
+help to transpile code , supporting IE
+
+[tree shaking]
+
+
+Liveserver in vscode : creates a to host your code
+
+
+In package.json 
+
+"scripts": {
+    "start": "parcel Day-2/src/index.html"
+    "build": "parcel Day-2/src/index.html"
+  }
+
+//npx parcel src/index.html
+=> to tell parcel root of our project
+=> root of our project -> src/index.html 
+
+NPM is a package manager used to install, delete, and update Javascript packages on your machine. 
+NPX is a package executer, and it is used to execute javascript packages directly, without installing them.
+
+
+// Hot module reload -> we are making some changes in code and saving it and it quickly reflects in browser.
+
+package-lock.json - have exact snapshot of the package which is running in ur local,
+to ensure each time npm install will pick up same version in your dev machine and in the build server.
+
+
+//dist 
+ contains the minimized version of the source code.
+contains actual things that has to be installed in the build
+
+
+
+
+
+
