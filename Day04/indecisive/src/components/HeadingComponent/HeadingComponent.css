@@ -1,0 +1,28 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #fff;
+  padding: 0 20px;
+}
+
+.team-logo{
+  font-size: 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+
+.team-logo > img {
+  height: 60px;
+}
