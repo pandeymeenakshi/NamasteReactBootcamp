@@ -1,0 +1,48 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px 100px / 120px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card>img {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background: #918b8b32;
+}
+
+
+.title {
+  color: grey;
+  font-size: 20px;
+}
+
+.card-img{
+  border-radius: 10px 100px / 120px;
+}
+
+
+.linkedin>a:hover {
+  text-decoration: underline;
+  color: inherit;
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+.linkedin-img, .card-location> img{
+  max-width: 20px;
+  max-height: 35px;
+}
